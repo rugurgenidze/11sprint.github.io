@@ -1,8 +1,8 @@
 {
   "name": "11sprint.github.io",
-  "homepage": "https://rugurgenidze.github.io/11sprint.github.io/",
+  "homepage": "https://github.com/rugurgenidze/11sprint.github.io#readme",
   "version": "0.0.1",
-  "description": "",
+  "description": "Mesto",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode production",
@@ -13,12 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/rugurgenidze/11sprint.github.io.git"
   },
-  "author": "",
+  "author": "Gurgenidze Ru",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rugurgenidze/11sprint.github.io/issues"
   },
-  "homepage": "https://github.com/rugurgenidze/11sprint.github.io#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
