@@ -1,4 +1,4 @@
-# Mesto V.0.0.1
+# Mesto V.0.0.2
 #### Gurgenidze 11sprint
 ## Пакеты, используемые в сборке:
 * [Babel CLI](https://babeljs.io/docs/en/babel-cli#docsNav).

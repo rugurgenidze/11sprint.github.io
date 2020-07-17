@@ -16,17 +16,7 @@ module.exports = {
 module: {
     rules: [{ // тут описываются правила
         test: /\.js$/, // регулярное выражение, которое ищет все js файлы
-        use: { loader: "babel-loader",
-            options: {
-                presets: [
-                    "@babel/preset-env",
-                    {
-                        plugins: [
-                            "@babel/plugin-proposal-class-properties"
-                        ]
-                    }
-                ]
-            } }, // весь JS обрабатывается пакетом babel-loader
+        use: { loader: "babel-loader"}, // весь JS обрабатывается пакетом babel-loader
         exclude: /node_modules/ // исключает папку node_modules
             },
             {
