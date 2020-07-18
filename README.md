@@ -1,4 +1,4 @@
-# Mesto V.0.0.2
+# Mesto V.0.0.4
 #### Gurgenidze 11sprint
 ## Пакеты, используемые в сборке:
 * [Babel CLI](https://babeljs.io/docs/en/babel-cli#docsNav).
@@ -15,4 +15,4 @@
 * Запустить в development режиме <npm run dev>.
 * Заупстить сборку production-билда <npm run build>.
 * Разместить production-билд на gh-pages <npm run deploy>.
-### [Mesto](https://github.com/rugurgenidze/11sprint.github.io.git)
+### [Mesto]( https://rugurgenidze.github.io/11sprint.github.io/)
