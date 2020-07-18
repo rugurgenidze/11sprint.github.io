@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mesto</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>" />
+  </head>
+  <body>
+    <div class="root">
+      <header class="header root__section">
+        <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo" />
+      </header>
+      <div class="profile root__section">
+        <div class="user-info">
+          <div class="user-info__photo"></div>
+          <div class="user-info__data">
+            <h1 class="user-info__name"></h1>
+            <p class="user-info__job"></p>
+          </div>
+          <button class="button user-info__button">+</button>
+          <button class="button edit__button">Edit</button>
+        </div>
+      </div>
+      <div class="places-list root__section"></div>
+      <div class="popup">
+        <div class="popup__content">
+          <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close" />
+          <h3 class="popup__title">Новое место</h3>
+          <form class="popup__form" name="new" novalidate>
+            <input
+              type="text"
+              name="name"
+              class="popup__input popup__input_type_name"
+              required
+              placeholder="Название"
+            />
+            <label for="name" class="popup__error"></label>
+            <input
+              type="text"
+              name="link"
+              class="popup__input popup__input_type_link-url"
+              required
+              placeholder="Ссылка на картинку"
+            />
+            <label for="link" class="popup__error"></label>
+            <button type="submit" class="button popup__button" disabled>+</button>
+          </form>
+        </div>
+      </div>
+      <div class="popup user__popup">
+          <div class="popup__content">
+            <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close" />
+            <h3 class="popup__title">Редактировать</h3>
+            <form class="popup__form" name="edit" novalidate>
+              <input 
+              type="text" 
+              name="user" 
+              class="popup__input popup__input_type_name" 
+              required 
+              placeholder="Имя"
+              minlength="2" 
+              maxlength="30"
+              />
+              <label for="user" class="popup__error"></label>
+              <input
+                type="text"
+                name="job"
+                class="popup__input popup__input_type_link-url"
+                required
+                placeholder="О себе" 
+                minlength="2" 
+                maxlength="30"
+              />
+              <label for="job" class="popup__error"></label>
+              <button type="submit" class="button popup__button_type_save" disabled>Сохранить</button>
+            </form>
+          </div>
+    </div>
+    <div class="popup popup_images">
+        <div class="popup__conteiner">
+          <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close" />
+        </div>
+    </div>
+    <!-- <script src="js/data.js"></script>
+    <script src="js/Card.js"></script>
+    <script src="js/CardList.js"></script>
+    <script src="js/Popup.js"></script>
+    <script src="js/BigImage.js"></script>
+    <script src="js/UserInfo.js"></script>
+    <script src="js/FormValidator.js"></script>
+    <script src="js/Api.js"></script> -->
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+  </body>
+</html>
